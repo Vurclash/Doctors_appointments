@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_05_21_194925) do
   create_table "appointments", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "doctor_id"
-    t.string "role"
+    t.string "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["doctor_id"], name: "index_appointments_on_doctor_id"
